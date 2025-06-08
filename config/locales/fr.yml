@@ -1,0 +1,17 @@
+fr:
+  navbar:
+    consult: "Consulter les cryptomonnaies"
+    talk: "Salons de discussion"
+    sign_in: "Connexion"
+    sign_up: "Rejoins-nous"
+  footer:
+    social_media: "Restons en contact:"
+    company_name: "Kudeus"
+    company_message: "Merci de votre présence, j'espère que votre nagivation se passera bien et que vous trouverez ce que vous cherchez."
+    links: "Liens utiles"
+    contact: "Contact"
+    email: "comonchaseus@gmail.com"
+    about_us: "À propos de nous"
+    privacy_policy: "Politique de confidentialité"
+    term_of_use: "Conditions générales d'utilisation"
+    cookie_policy: "Politique en matière de cookies" 

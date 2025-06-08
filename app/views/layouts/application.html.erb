@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html class='primary-font-stack'>
   <head>
     <title><%= content_for(:title) || "Crypto Dashboard" %></title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
@@ -19,7 +19,7 @@
 
   <body>
     <%= render partial: 'layouts/navbar' %>
-    <div class='main'>
+    <div class='main bg-primary'>
       <%= yield %>
     </div>
     <%= render partial: 'layouts/footer' %>

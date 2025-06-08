@@ -1,0 +1,33 @@
+<div class='main bg-primary'>
+  <div class='container'>
+    <div class="row align-items-center pt-5 pb-5">
+      <div class="col">
+        <h1 class="secondary-color">
+          <%= t("home.main_holder") %>
+          <span class="warning-color"> <%= t("home.holder_1") %> </span>
+        </h1>
+      </div>
+      <div class="col">
+        <%= image_tag "stonks", width: 500, class: 'image-cornered' %>
+      </div>
+    </div>
+  </div>
+  <div class="row-fluid pt-1 pb-1 mt-5 bg-color-secondary">
+    <div id="carouselAutoplaying" class="carousel slide" data-bs-ride="carousel">
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <%= image_tag "shiba", width: 100, class: 'd-block' %>
+        </div>
+        <div class="carousel-item">
+          <%= image_tag "dodge", width: 100, class: 'd-block' %>
+        </div>
+        <div class="carousel-item">
+          <%= image_tag "bitcoin", width: 100, class: 'd-block' %>
+        </div>
+        <div class="carousel-item">
+          <%= image_tag "ethereum", width: 100, class: 'd-block' %>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

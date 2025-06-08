@@ -1,5 +1,6 @@
 en:
   navbar:
+    arrow: "➤"
     consult: "View cryptocurrency values"
     talk: "Discussion rooms"
     sign_in: "Login"
@@ -15,3 +16,6 @@ en:
     privacy_policy: "Privacy Policy"
     term_of_use: "Term of use"
     cookie_policy: "Cookie Policy" 
+  home:
+    main_holder: "This is a free and simple tool witch with you can"
+    holder_1: "view variations of plenty cryptocurrencies."

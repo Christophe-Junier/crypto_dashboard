@@ -23,6 +23,19 @@ $warning-background-color:   #F4EA1E; //jaune foncé
   background-color: $secondary-background-color !important;
 }
 
+// Colors
+.primary-color {
+  color: $primary-background-color;
+}
+
+.secondary-color {
+  color: $secondary-background-color;
+}
+
+.warning-color {
+  color: $warning-background-color;
+}
+
 // Fonts
 .primary-font-stack {
   font: 100% $primary-font-stack;

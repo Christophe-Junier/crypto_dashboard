@@ -1,5 +1,6 @@
 fr:
   navbar:
+    arrow: "➤"
     consult: "Consulter les cryptomonnaies"
     talk: "Salons de discussion"
     sign_in: "Connexion"
@@ -14,4 +15,7 @@ fr:
     about_us: "À propos de nous"
     privacy_policy: "Politique de confidentialité"
     term_of_use: "Conditions générales d'utilisation"
-    cookie_policy: "Politique en matière de cookies" 
+    cookie_policy: "Politique en matière de cookies"
+  home:
+    main_holder: "Voici un outil simple et gratuit vous permettant de"
+    holder_1: "visualiser les variations de nombreuse cryptomonnaies."

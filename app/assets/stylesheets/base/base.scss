@@ -1,5 +1,5 @@
 .main {
-  height: 90vh;
+  height: 93vh;
 }
 
 a {
@@ -8,4 +8,19 @@ a {
 
 .image-rounded {
   border-radius: 50%;
+}
+
+.image-cornered {
+  border-radius: 5%;
+}
+
+.nav-link {
+  &:hover {
+    border-bottom: 2px solid black;
+    padding: 0 0 2px;
+  }
+}
+
+.carousel-inner img {
+  margin: auto;
 }

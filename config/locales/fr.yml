@@ -19,3 +19,5 @@ fr:
   home:
     main_holder: "Voici un outil simple et gratuit vous permettant de"
     holder_1: "visualiser les variations de nombreuse cryptomonnaies."
+    holder_2: "créer et gérer un portefeuille virtuelle."
+    holder_3: "recevoir une notification en cas de chute ou de hausse selon vos paramètres."

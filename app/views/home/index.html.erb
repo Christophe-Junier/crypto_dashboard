@@ -2,13 +2,17 @@
   <div class='container'>
     <div class="row align-items-center pt-5 pb-5">
       <div class="col">
-        <h1 class="secondary-color">
+        <h1 class="secondary-color" data-controller="visibility">
           <%= t("home.main_holder") %>
-          <span class="warning-color"> <%= t("home.holder_1") %> </span>
+          <span class="warning-color" id="holder_1" data-visibility-target="hideable"> <%= t("home.holder_1") %> </span>
+          <span class="warning-color d-none" id="holder_2" data-visibility-target="hideable"> <%= t("home.holder_2") %> </span>
+          <span class="warning-color d-none" id="holder_3" data-visibility-target="hideable"> <%= t("home.holder_3") %> </span>
         </h1>
       </div>
-      <div class="col">
-        <%= image_tag "stonks", width: 500, class: 'image-cornered' %>
+      <div class="col" data-controller="visibility">
+        <%= image_tag "stonks", width: 500, class: 'image-cornered', id: "holder_1", data: { 'visibility-target': "hideable" } %>
+        <%= image_tag "wallet", width: 500, class: 'image-cornered d-none', id: "holder_2", data: { 'visibility-target': "hideable" } %>
+        <%= image_tag "notify", width: 500, class: 'image-cornered d-none', id: "holder_3", data: { 'visibility-target': "hideable" } %>
       </div>
     </div>
   </div>

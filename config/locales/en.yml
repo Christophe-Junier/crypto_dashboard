@@ -21,3 +21,6 @@ en:
     holder_1: "view variations of plenty cryptocurrencies."
     holder_2: "create et manage a virtual wallet."
     holder_3: "be notified in case of increase or decrease based on your parameters."
+  crypto_currencies:
+    consult: "View"
+    last_update: "Last update: "

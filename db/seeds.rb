@@ -7,3 +7,7 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+
+{ "Ethereum": "ETH", "Bitcoin": "BTC", "Dogecoin": "DOGE", "Shiba Inu": "SHIB" }.each do |fullname, shortname|
+  CryptoCurrency.find_or_create_by!(fullname: fullname, shortname: shortname)
+end

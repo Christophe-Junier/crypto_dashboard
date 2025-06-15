@@ -27,6 +27,8 @@ gem "font-awesome-sass"
 gem "redis", ">= 4.0.1"
 # Use Sidekiq to throw job in redis
 gem 'sidekiq', '~> 7.1', '>= 7.1.2'
+# HTTP client
+gem 'faraday'
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
@@ -36,6 +38,7 @@ group :development, :test do
   # Omakase Ruby styling [https://github.com/rails/rubocop-rails-omakase/]
   gem "rubocop-rails-omakase", require: false
   gem 'annotate'
+  gem 'dotenv', groups: [:development, :test]
 end
 
 group :development do

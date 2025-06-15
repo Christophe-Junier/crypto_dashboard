@@ -4,7 +4,7 @@ class CreateCryptoCurrencies < ActiveRecord::Migration[7.2]
       t.timestamps
       t.string :fullname
       t.string :shortname
-      t.integer :value
+      t.float :value
     end
   end
 end

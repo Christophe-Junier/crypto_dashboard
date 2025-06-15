@@ -19,6 +19,6 @@ ActiveRecord::Schema[7.2].define(version: 2025_06_11_173108) do
     t.datetime "updated_at", null: false
     t.string "fullname"
     t.string "shortname"
-    t.integer "value"
+    t.float "value"
   end
 end

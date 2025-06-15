@@ -12,6 +12,12 @@ class UpdateCryptoCurrenciesJob
       response["data"].each do |data|
           if available_crypto.include? data["name"]
             crypto = CryptoCurrency.find_by_fullname(data["name"])
+            CryptoCurrencyHistoricalValue.create(
+              fullname: crypto.fullname,
+              shortname: crypto.shortname,
+              value: crypto.value,
+              crypto_currency_id: crypto.id
+            )
             crypto.update(value: data["quote"]["EUR"]["price"])
           end
       end

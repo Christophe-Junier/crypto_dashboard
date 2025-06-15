@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema[7.2].define(version: 2025_06_11_173108) do
+ActiveRecord::Schema[7.2].define(version: 2025_06_15_131306) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
@@ -20,5 +20,15 @@ ActiveRecord::Schema[7.2].define(version: 2025_06_11_173108) do
     t.string "fullname"
     t.string "shortname"
     t.float "value"
+  end
+
+  create_table "crypto_currency_historical_values", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+    t.string "fullname"
+    t.string "shortname"
+    t.float "value"
+    t.bigint "crypto_currency_id"
+    t.index ["crypto_currency_id"], name: "index_crypto_currency_historical_values_on_crypto_currency_id"
   end
 end

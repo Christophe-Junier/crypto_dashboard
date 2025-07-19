@@ -112,6 +112,7 @@ GEM
       irb (~> 1.10)
       reline (>= 0.3.8)
     debug_inspector (1.2.0)
+    docile (1.4.1)
     dotenv (3.1.8)
     drb (2.2.3)
     erb (5.0.1)
@@ -313,6 +314,12 @@ GEM
       logger
       rack (>= 2.2.4)
       redis-client (>= 0.22.2)
+    simplecov (0.22.0)
+      docile (~> 1.1)
+      simplecov-html (~> 0.11)
+      simplecov_json_formatter (~> 0.1)
+    simplecov-html (0.13.2)
+    simplecov_json_formatter (0.1.4)
     sprockets (4.2.2)
       concurrent-ruby (~> 1.0)
       logger
@@ -385,6 +392,7 @@ DEPENDENCIES
   sassc-rails
   selenium-webdriver
   sidekiq (~> 7.1, >= 7.1.2)
+  simplecov
   sprockets-rails
   stimulus-rails
   turbo-rails

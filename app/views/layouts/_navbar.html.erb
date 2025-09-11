@@ -1,29 +1,65 @@
-<nav class="navbar navbar-expand-lg bg-color-primary">
-  <div class="container">
-    <a class="navbar-brand" href="/">
-      <%= image_tag 'logo.png', width: 85, class: 'image-rounded' %>
+<nav class="fixed w-full z-20 top-0 start-0 bg-navbar" data-expanded="false" data-controller="collapse">
+  <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+
+    <a href="#" class="flex items-center space-x-2">
+        <%= image_tag 'logo.png', width: 85, class: 'h-10 w-10 lg:h-12 lg:w-12', alt: "CryptoView Logo" %>
+        <span class="self-center text-sm md:text-xl font-semibold whitespace-nowrap text-white">CryptoView</span>
     </a>
-    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-      <li class="nav-item">
-        <a class="nav-link" aria-current="page" href="<%= crypto_currencies_path %>">
-          <%= t("navbar.arrow") %>
-          <%= t("navbar.consult") %>
-        </a>
-      </li>
-      <li class="nav-item">
-        <a class="nav-link" href="#">
-          <%= t("navbar.arrow") %>
-          <%= t("navbar.talk") %>
-        </a>
-      </li>
-    </ul>
-    <form class="">
-      <a class="btn btn-primary mr-2" href="#">
-          <%= t("navbar.sign_in") %>
-      </a>
-      <a class="btn btn-success-inverted" href="#">
-          <%= t("navbar.sign_up") %>
-      </a>
-    </form>
+
+    <div class="flex md:order-2 space-x-3 md:space-x-0">
+      <button data-action="collapse#toggle" type="button" class="inline-flex items-center p-2 w-10 h-10 justify-center text-sm text-black rounded-lg lg:hidden bg-yellow-300 cursor-pointer" aria-controls="navbar-sticky" aria-expanded="false">
+        <span class="sr-only">Open main menu</span>
+        <svg class="w-5 h-5" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 17 14">
+          <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M1 1h15M1 7h15M1 13h15"/>
+        </svg>
+      </button>
+        <button type="button" class="text-white max-lg:hidden text-sm px-4 py-2 text-center cursor-pointer hover:text-yellow-300"><%= t("navbar.sign_in") %></button>
+        <button type="button" class="text-white max-lg:hidden text-sm border-2 rounded-3xl px-4 py-2 text-center hover:text-black hover:text-black hover:bg-yellow-300 hover:border-yellow-300 cursor-pointer"><%= t("navbar.sign_up") %></button>
+    </div>
+
+    <div class="items-center justify-between max-lg:hidden w-full lg:flex md:w-auto md:order-1">
+      <ul class="flex flex-col p-4 md:p-0 mt-4 font-small md:space-x-8 md:flex-row md:mt-0">
+        <li>
+          <a href="#" class="block text-md py-2 px-3 text-white md:p-0 hover:text-yellow-300" aria-current="page">
+            <%= t("navbar.arrow") %>
+            <%= t("navbar.consult") %>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="block text-md py-2 px-3 text-white md:p-0 hover:text-yellow-300">
+            <%= t("navbar.arrow") %>
+            <%= t("navbar.talk") %>
+          </a>
+        </li>
+      </ul>
+    </div>
+
+    <div class="items-center justify-between [[data-expanded=false]_&]:hidden w-full lg:flex md:order-3" id="navbar-collapsable">
+      <ul class="flex flex-col p-4 mt-1 font-small">
+        <li>
+          <a href="#" class="block text-md py-2 px-3 text-white hover:text-yellow-300" aria-current="page">
+            <%= t("navbar.sign_up") %>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="block text-md py-2 px-3 text-white hover:text-yellow-300" aria-current="page">
+            <%= t("navbar.sign_in") %>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="block text-md py-2 px-3 text-white hover:text-yellow-300" aria-current="page">
+            <%= t("navbar.arrow") %>
+            <%= t("navbar.consult") %>
+          </a>
+        </li>
+        <li>
+          <a href="#" class="block text-md py-2 px-3 text-white hover:text-yellow-300">
+            <%= t("navbar.arrow") %>
+            <%= t("navbar.talk") %>
+          </a>
+        </li>
+      </ul>
+    </div>
+  
   </div>
 </nav>

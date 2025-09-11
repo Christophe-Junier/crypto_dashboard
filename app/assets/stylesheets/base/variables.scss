@@ -2,94 +2,15 @@
 ce fichier doit contenir l'utilisation de ces variables dans des classes */
 
 // Variables
-$primary-font-stack:           Helvetica, sans-serif; //Helvetica sans sérigraphie
-$primary-background-color:   #FFFAFA; //neige
-$secondary-background-color: #191970; //bleu nuit
-$danger-background-color:    #e66465; //rose rouge
-$success-background-color:   #198754; //vert atténué
-$warning-background-color:   #F4EA1E; //jaune foncé
+$landing-page-navbar-background-color:  #06060b;
 
 // Backgrounds
-.bg-primary {
-  background: linear-gradient(45deg, $danger-background-color, $secondary-background-color);
+.bg-landing {
+  background: url("landing-background.svg") no-repeat center/cover;
+  width: 100vw;
+  height: 100vh;
 }
 
-// Backgrounds colors
-.bg-color-primary {
-  background-color: $primary-background-color !important;
-}
-
-.bg-color-secondary {
-  background-color: $secondary-background-color !important;
-}
-
-// Colors
-.primary-color {
-  color: $primary-background-color;
-}
-
-.secondary-color {
-  color: $secondary-background-color;
-}
-
-.warning-color {
-  color: $warning-background-color;
-}
-
-// Fonts
-.primary-font-stack {
-  font: 100% $primary-font-stack;
-}
-
-// Buttons
-.btn-primary {
-  background-color: $primary-background-color;
-  color: $secondary-background-color;
-  border: 2px solid $secondary-background-color;
-  font-weight: 500;
-
-  &:hover {
-    background-color: $secondary-background-color;
-    color: $primary-background-color;
-    border-color:  $secondary-background-color;
-  }
-}
-
-.btn-primary-inverted {
-  background-color: $secondary-background-color;
-  color: $primary-background-color;
-  border: 2px solid $secondary-background-color;
-  font-weight: 500;
-
-  &:hover {
-    background-color: $primary-background-color;
-    color: $secondary-background-color;
-    border-color:  $secondary-background-color;
-  }
-}
-
-.btn-success {
-  background-color: $primary-background-color;
-  color: $success-background-color;
-  border: 2px solid $success-background-color;
-  font-weight: 500;
-
-  &:hover {
-    background-color: $success-background-color;
-    color: $primary-background-color;
-    border-color:  $success-background-color;
-  }
-}
-
-.btn-success-inverted {
-  background-color: $success-background-color;
-  color: $primary-background-color;
-  border: 2px solid $success-background-color;
-  font-weight: 500;
-
-  &:hover {
-    background-color: $primary-background-color;
-    color: $success-background-color;
-    border-color:  $success-background-color;
-  }
+.bg-navbar {
+  background-color: $landing-page-navbar-background-color;
 }

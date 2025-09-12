@@ -6,13 +6,10 @@ en:
     sign_in: "Login"
     sign_up: "Join us"
   footer:
-    social_media: "Get connected with us on social networks:"
-    company_name: "Kudeus"
-    company_message: "Thanks for using my website, I hope you will find what you needs here!"
+    social_media: "Stay connected"
     links: "Usefull links"
     contact: "Contact"
-    email: "comonchaseus@gmail.com"
-    about_us: "About us"
+    legal: "Legal"
     privacy_policy: "Privacy Policy"
     term_of_use: "Term of use"
     cookie_policy: "Cookie Policy" 
@@ -23,7 +20,6 @@ en:
     holder_3: "Notification in case of increase or decrease"
     holder_4: "Sign up and unlock all functionalities"
     join: "Sign up"
-
   crypto_currencies:
     consult: "View"
     last_update: "Last update: "

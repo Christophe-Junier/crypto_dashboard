@@ -17,10 +17,12 @@ fr:
     term_of_use: "Conditions générales d'utilisation"
     cookie_policy: "Politique en matière de cookies"
   home:
-    main_holder: "Voici un outil simple et gratuit vous permettant de"
-    holder_1: "visualiser les variations de nombreuse cryptomonnaies."
-    holder_2: "créer et gérer un portefeuille virtuelle."
-    holder_3: "recevoir une notification en cas de chute ou de hausse selon vos paramètres."
+    main_holder: "Un outil simple et gratuit"
+    holder_1: "Visualiser les variations de nombreuse cryptomonnaies"
+    holder_2: "Créer et gérer un portefeuille virtuelle"
+    holder_3: "Notification en cas de chute ou de hausse"
+    holder_4: "Inscris toi et débloque toutes les fonctionnalités"
+    join: "M'inscrire"
   crypto_currencies:
     consult: "Consulter"
     last_update: "Dernière mise à jour : "

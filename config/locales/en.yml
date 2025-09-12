@@ -17,10 +17,13 @@ en:
     term_of_use: "Term of use"
     cookie_policy: "Cookie Policy" 
   home:
-    main_holder: "This is a free and simple tool witch with you can"
-    holder_1: "view variations of plenty cryptocurrencies."
-    holder_2: "create et manage a virtual wallet."
-    holder_3: "be notified in case of increase or decrease based on your parameters."
+    main_holder: "A free and simple tool"
+    holder_1: "View variations of plenty cryptocurrencies"
+    holder_2: "Create and manage a virtual wallet"
+    holder_3: "Notification in case of increase or decrease"
+    holder_4: "Sign up and unlock all functionalities"
+    join: "Sign up"
+
   crypto_currencies:
     consult: "View"
     last_update: "Last update: "

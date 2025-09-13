@@ -30,6 +30,11 @@ gem 'sidekiq', '~> 7.1', '>= 7.1.2'
 gem 'faraday'
 # Charts
 gem "rails_charts"
+# Authentication
+gem "devise"
+# Front
+gem "tailwindcss-ruby", "~> 4.1"
+gem "tailwindcss-rails", "~> 4.3"
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
@@ -55,7 +60,3 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 end
-
-gem "tailwindcss-ruby", "~> 4.1"
-
-gem "tailwindcss-rails", "~> 4.3"

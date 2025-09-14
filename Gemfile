@@ -45,6 +45,7 @@ group :development, :test do
   gem "rubocop-rails-omakase", require: false
   gem "annotate"
   gem "dotenv", groups: [ :development, :test ]
+  gem 'simplecov-small-badge', :require => false
 end
 
 group :development do

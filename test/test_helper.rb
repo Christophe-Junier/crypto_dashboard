@@ -1,6 +1,22 @@
 ENV["RAILS_ENV"] ||= "test"
+
 require "simplecov"
-SimpleCov.start "rails"
+require 'simplecov_small_badge'
+
+SimpleCov.start "rails" do 
+  SimpleCov.formatters = SimpleCov::Formatter::MultiFormatter.new([
+    SimpleCov::Formatter::HTMLFormatter,
+    SimpleCovSmallBadge::Formatter
+  ])
+end
+
+SimpleCovSmallBadge.configure do |config|
+  # does not created rounded borders
+  config.rounded_border = true
+  # set the background for the title to darkgrey
+  config.background = '#ffffcc'
+end
+
 require_relative "../config/environment"
 require "rails/test_help"
 

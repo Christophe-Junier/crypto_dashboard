@@ -5,6 +5,7 @@ en:
     talk: "Discussion rooms"
     sign_in: "Login"
     sign_up: "Join us"
+    sign_out: "Disconnect"
   footer:
     social_media: "Stay connected"
     links: "Usefull links"

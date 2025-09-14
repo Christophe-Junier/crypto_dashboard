@@ -1,0 +1,14 @@
+en:
+  activerecord:
+    errors:
+      models:
+        user:
+          attributes:
+            email:
+              blank: "must be given"
+            password:
+              blank: "must be given"
+              too_short: "is too short"
+              too_long: "is too long"
+            password_confirmation:
+              confirmation: "doesn't match the password"

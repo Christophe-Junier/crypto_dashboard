@@ -5,6 +5,7 @@ fr:
     talk: "Salons de discussion"
     sign_in: "Connexion"
     sign_up: "Rejoins-nous"
+    sign_out: "Déconnexion"
   footer:
     social_media: "Restons en contact"
     links: "Liens utiles"

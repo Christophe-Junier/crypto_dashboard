@@ -8,16 +8,16 @@
   <%= render "users/shared/error_messages", resource: resource %>
   <div class="mb-5 ml-10 mr-10">
     <label for="email" class="block mb-2 text-sm font-medium text-white"><%= t("devise.form.email") %></label>
-    <input type="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-yellow-300 focus:border-blue-500 block w-full p-2.5" required />
+    <input type="email" id="email" name="user[email]" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-yellow-300 focus:border-blue-500 block w-full p-2.5" required />
   </div>
   <div class="mb-5 ml-10 mr-10">
     <label for="password" class="block mb-2 text-sm font-medium text-white"><%= t("devise.form.password") %></label>
-    <input type="password" id="password" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-yellow-300 focus:border-blue-500 block w-full p-2.5" required />
+    <input type="password" id="password" name="user[password]" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-yellow-300 focus:border-blue-500 block w-full p-2.5" required />
   </div>
   <% if devise_mapping.rememberable? %>
     <div class="field flex ml-10 mr-10 mb-5">
       <label for="password" class="block mb-2 text-sm font-medium text-white"><%= t("devise.form.remember_me") %></label>
-      <input type="checkbox" id="remember_me" class="ml-5" />
+      <input type="checkbox" id="remember_me" name="user[remember_me]" class="ml-5" />
     </div>
   <% end %>
 

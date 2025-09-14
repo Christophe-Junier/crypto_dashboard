@@ -25,7 +25,7 @@ gem "font-awesome-sass"
 # Use Redis adapter to run Action Cable in production
 gem "redis", ">= 4.0.1"
 # Use Sidekiq to throw job in redis
-gem 'sidekiq', '~> 7.1', '>= 7.1.2'
+gem 'sidekiq', '~> 8.0'
 # HTTP client
 gem 'faraday'
 # Charts

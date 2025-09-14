@@ -28,6 +28,8 @@ fr:
     sign_in:
       sign_in: "Connexion"
       forgot_password: "Mot de passe oublié ?"
+    password:
+      new: "Mot de passe oublié"
   crypto_currencies:
     consult: "Consulter"
     last_update: "Dernière mise à jour : "

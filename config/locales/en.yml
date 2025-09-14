@@ -28,6 +28,8 @@ en:
     sign_in:
       sign_in: "Log in"
       forgot_password: "Forgotten password?"
+    password:
+      new: "Forgotten password"
   crypto_currencies:
     consult: "View"
     last_update: "Last update: "

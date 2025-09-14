@@ -1,5 +1,9 @@
 # README
 
+## Status
+[![CI](https://github.com/Christophe-Junier/crypto_dashboard/actions/workflows/ci.yml/badge.svg)](https://github.com/Christophe-Junier/crypto_dashboard/actions/workflows/ci.yml)
+[![Dependabot Updates](https://github.com/Christophe-Junier/crypto_dashboard/actions/workflows/dependabot/dependabot-updates/badge.svg)](https://github.com/Christophe-Junier/crypto_dashboard/actions/workflows/dependabot/dependabot-updates)
+
 This README would normally document whatever steps are necessary to get the
 application up and running.
 

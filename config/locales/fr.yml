@@ -20,6 +20,11 @@ fr:
     holder_3: "Notification en cas de chute ou de hausse"
     holder_4: "Inscris toi et débloque toutes les fonctionnalités"
     join: "M'inscrire"
+  users:
+    sign_up:
+      why: "Pourquoi s'inscrire ?"
+      chat_access: "Chat interne partagé entre les utilisateurs. ✅"
+      simulation_access: "Partie simulation/résultat d'investissement. ✅"
   crypto_currencies:
     consult: "Consulter"
     last_update: "Dernière mise à jour : "

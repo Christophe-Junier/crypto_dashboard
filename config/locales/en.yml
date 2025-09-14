@@ -20,6 +20,11 @@ en:
     holder_3: "Notification in case of increase or decrease"
     holder_4: "Sign up and unlock all functionalities"
     join: "Sign up"
+  users:
+    sign_up:
+      why: "Why registering ?"
+      chat_access: "Full access to a chat shared by all other users."
+      simulation_access: "Full Access to the simulation part where you can fake trades and view results."
   crypto_currencies:
     consult: "View"
     last_update: "Last update: "

@@ -3,6 +3,8 @@ ce fichier doit contenir l'utilisation de ces variables dans des classes */
 
 // Variables
 $landing-page-navbar-background-color:  #06060b;
+$background-color-start:  #06060c;
+$background-color-end:  #090911;
 
 // Backgrounds
 .bg-landing {
@@ -11,4 +13,8 @@ $landing-page-navbar-background-color:  #06060b;
 
 .bg-navbar {
   background-color: $landing-page-navbar-background-color;
+}
+
+.bg-primary {
+  background: linear-gradient(to bottom right, $background-color-start, $background-color-end)
 }

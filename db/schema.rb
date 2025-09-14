@@ -14,24 +14,6 @@ ActiveRecord::Schema[7.2].define(version: 2025_09_13_204629) do
   # These are extensions that must be enabled in order to support this database
   enable_extension "plpgsql"
 
-  create_table "crypto_currencies", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.string "fullname"
-    t.string "shortname"
-    t.float "value"
-  end
-
-  create_table "crypto_currency_historical_values", force: :cascade do |t|
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-    t.string "fullname"
-    t.string "shortname"
-    t.float "value"
-    t.bigint "crypto_currency_id"
-    t.index ["crypto_currency_id"], name: "index_crypto_currency_historical_values_on_crypto_currency_id"
-  end
-
   create_table "users", force: :cascade do |t|
     t.string "email", default: "", null: false
     t.string "encrypted_password", default: "", null: false

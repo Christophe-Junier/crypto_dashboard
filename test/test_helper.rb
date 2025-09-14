@@ -17,6 +17,9 @@ SimpleCovSmallBadge.configure do |config|
   config.background = '#ffffcc'
 end
 
+SimpleCov.minimum_coverage 90
+SimpleCov.refuse_coverage_drop
+
 require_relative "../config/environment"
 require "rails/test_help"
 

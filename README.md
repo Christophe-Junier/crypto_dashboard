@@ -7,7 +7,7 @@
 ![Coverage](coverage/coverage_badge_total.svg)
 
 ## Version
-Ruby 3.3.3
-Rails 7.2.2.1
-PostgreSQL 14.19
-Redis 5.4.0
+* Ruby 3.3.3
+* Rails 7.2.2.1
+* PostgreSQL 14.19
+* Redis 5.4.0

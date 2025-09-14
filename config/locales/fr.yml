@@ -25,6 +25,9 @@ fr:
       why: "Pourquoi s'inscrire ?"
       chat_access: "Chat interne partagé entre les utilisateurs. ✅"
       simulation_access: "Partie simulation/résultat d'investissement. ✅"
+    sign_in:
+      sign_in: "Connexion"
+      forgot_password: "Mot de passe oublié ?"
   crypto_currencies:
     consult: "Consulter"
     last_update: "Dernière mise à jour : "

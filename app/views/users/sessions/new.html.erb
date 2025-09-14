@@ -1,26 +1,28 @@
-<h2>Log in</h2>
+<div class="flex flex-col items-center">
+  <p class="text-white text-center text-2xl pt-30 pb-5 md:pt-30 md:text-4xl lg:pt-60 lg:text-6xl lg:pb-10">
+    <%= t("users.sign_in.sign_in") %>
+  </p>
+</div>
 
-<%= form_for(resource, as: resource_name, url: session_path(resource_name)) do |f| %>
-  <div class="field">
-    <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true, autocomplete: "email" %>
+<%= form_for(resource, as: resource_name, url: session_path(resource_name), html: { class: "max-w-sm mx-auto mt-7 mb-7" }) do |f| %>
+  <%= render "users/shared/error_messages", resource: resource %>
+  <div class="mb-5 ml-10 mr-10">
+    <label for="email" class="block mb-2 text-sm font-medium text-white"><%= t("devise.form.email") %></label>
+    <input type="email" id="email" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-yellow-300 focus:border-blue-500 block w-full p-2.5" required />
   </div>
-
-  <div class="field">
-    <%= f.label :password %><br />
-    <%= f.password_field :password, autocomplete: "current-password" %>
+  <div class="mb-5 ml-10 mr-10">
+    <label for="password" class="block mb-2 text-sm font-medium text-white"><%= t("devise.form.password") %></label>
+    <input type="password" id="password" class="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-yellow-300 focus:border-blue-500 block w-full p-2.5" required />
   </div>
-
   <% if devise_mapping.rememberable? %>
-    <div class="field">
-      <%= f.check_box :remember_me %>
-      <%= f.label :remember_me %>
+    <div class="field flex ml-10 mr-10 mb-5">
+      <label for="password" class="block mb-2 text-sm font-medium text-white"><%= t("devise.form.remember_me") %></label>
+      <input type="checkbox" id="remember_me" class="ml-5" />
     </div>
   <% end %>
 
-  <div class="actions">
-    <%= f.submit "Log in" %>
-  </div>
+  <button type="submit" class="ml-10 text-black bg-yellow-300 hover:bg-yellow-400 cursor-pointer font-medium rounded-lg text-sm px-5 py-2.5 text-center"><%= t("devise.sessions.sign_in") %></button>
+  <a href="" class="text-white text-xs ml-5 hover:text-yellow-300"><%= t("users.sign_in.forgot_password")%></a>
 <% end %>
 
 <%= render "users/shared/links" %>

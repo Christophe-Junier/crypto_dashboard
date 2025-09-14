@@ -25,6 +25,9 @@ en:
       why: "Why registering ?"
       chat_access: "Full access to a chat shared by all other users."
       simulation_access: "Full Access to the simulation part where you can fake trades and view results."
+    sign_in:
+      sign_in: "Log in"
+      forgot_password: "Forgotten password?"
   crypto_currencies:
     consult: "View"
     last_update: "Last update: "

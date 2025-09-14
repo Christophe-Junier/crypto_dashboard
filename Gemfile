@@ -46,6 +46,7 @@ group :development, :test do
   gem "annotate"
   gem "dotenv", groups: [ :development, :test ]
   gem "simplecov-small-badge", require: false
+  gem "byebug", "~> 12.0"
 end
 
 group :development do

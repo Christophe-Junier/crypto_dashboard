@@ -8,6 +8,13 @@ SimpleCov.start "rails" do
     SimpleCov::Formatter::HTMLFormatter,
     SimpleCovSmallBadge::Formatter
   ])
+
+  add_filter %w(
+    app/helpers/application_helper.rb
+    app/channels/application_cable/channel.rb
+    app/jobs/application_job.rb
+    app/mailers/application_mailer.rb
+  )
 end
 
 SimpleCovSmallBadge.configure do |config|

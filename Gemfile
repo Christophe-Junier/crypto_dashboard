@@ -25,9 +25,9 @@ gem "font-awesome-sass"
 # Use Redis adapter to run Action Cable in production
 gem "redis", ">= 4.0.1"
 # Use Sidekiq to throw job in redis
-gem 'sidekiq', '~> 7.1', '>= 7.1.2'
+gem "sidekiq", "~> 7.1", ">= 7.1.2"
 # HTTP client
-gem 'faraday'
+gem "faraday"
 # Charts
 gem "rails_charts"
 # Authentication
@@ -43,8 +43,8 @@ group :development, :test do
   gem "brakeman", require: false
   # Omakase Ruby styling [https://github.com/rails/rubocop-rails-omakase/]
   gem "rubocop-rails-omakase", require: false
-  gem 'annotate'
-  gem 'dotenv', groups: [:development, :test]
+  gem "annotate"
+  gem "dotenv", groups: [ :development, :test ]
 end
 
 group :development do
@@ -56,7 +56,7 @@ end
 
 group :test do
   # Use system testing [https://guides.rubyonrails.org/testing.html#system-testing]
-  gem 'simplecov', require: false
+  gem "simplecov", require: false
   gem "capybara"
   gem "selenium-webdriver"
 end

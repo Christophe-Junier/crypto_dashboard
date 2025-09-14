@@ -2,7 +2,7 @@ module ApplicationHelper
 end
 
 module FormattedTimeHelper
-  def format_time(time, format=:db, blank_message="&nbsp;")
+  def format_time(time, format = :db, blank_message = "&nbsp;")
     return blank_message if time.blank?
     if I18n.locale == :fr
       time.to_fs(:fr_db)

@@ -42,76 +42,6 @@
         ],
         "branches": {}
       },
-      "/home/tentayr/crypto_dashboard/app/controllers/users/confirmations_controller.rb": {
-        "lines": [
-          null,
-          null,
-          0,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          0
-        ],
-        "branches": {}
-      },
-      "/home/tentayr/crypto_dashboard/app/controllers/users/omniauth_callbacks_controller.rb": {
-        "lines": [
-          null,
-          null,
-          0,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          0
-        ],
-        "branches": {}
-      },
       "/home/tentayr/crypto_dashboard/app/controllers/users/passwords_controller.rb": {
         "lines": [
           null,
@@ -250,41 +180,6 @@
         ],
         "branches": {}
       },
-      "/home/tentayr/crypto_dashboard/app/controllers/users/unlocks_controller.rb": {
-        "lines": [
-          null,
-          null,
-          0,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          null,
-          0
-        ],
-        "branches": {}
-      },
       "/home/tentayr/crypto_dashboard/app/models/application_record.rb": {
         "lines": [
           0,
@@ -300,11 +195,15 @@
           null,
           0,
           0,
+          null,
+          0,
+          0,
+          0,
           0
         ],
         "branches": {}
       }
     },
-    "timestamp": 1757880574
+    "timestamp": 1758016909
   }
 }

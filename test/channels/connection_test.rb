@@ -1,3 +1,5 @@
+require "test_helper"
+
 class ApplicationCable::ConnectionTest < ActionCable::Connection::TestCase
   test "connects with proper cookie" do
     # Simulate the connection request with a cookie.

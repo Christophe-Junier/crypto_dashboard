@@ -6,6 +6,8 @@ fr:
           attributes:
             email:
               blank: "doit être rempli"
+              invalid: "est invalide"
+              taken: "est déjà pris"
             password:
               blank: "doit être rempli"
               too_short: "est trop court"

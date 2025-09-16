@@ -1,51 +1,54 @@
 require "test_helper"
 
 class UserTest < ActiveSupport::TestCase
-  fixtures :users
+  def setup
+    @user = User.new(email: 'userone@example.com', password: "password123")
+  end
 
   test "is valid with valid attributes" do
-    assert users(:one).valid?
+    assert @user.valid?
   end
 
   test "is invalid without email" do
-    users(:one).email = nil
-    assert_not users(:one).valid?
-    assert_includes users(:one).errors[:email], I18n.t('activerecord.errors.models.user.attributes.email.blank')
+    @user.email = nil
+    assert_not @user.valid?
+    assert_includes @user.errors[:email], I18n.t('activerecord.errors.models.user.attributes.email.blank')
   end
 
   test "is invalid with invalid email" do
-    users(:one).email = "invalid_email"
-    assert_not users(:one).valid?
-    assert_includes users(:one).errors[:email], I18n.t('activerecord.errors.models.user.attributes.email.invalid')
+    @user.email = "invalid_email"
+    assert_not @user.valid?
+    assert_includes @user.errors[:email], I18n.t('activerecord.errors.models.user.attributes.email.invalid')
   end
 
   test "is invalid without password" do
-    user = User.new(email: "no_password@example.com", password: nil)
-    assert_not user.valid?
-    assert_includes user.errors[:password], I18n.t('activerecord.errors.models.user.attributes.password.blank')
+    @user.password = nil
+    assert_not @user.valid?
+    assert_includes @user.errors[:password], I18n.t('activerecord.errors.models.user.attributes.password.blank')
   end
 
   test "is invalid when password is too short" do
-    users(:one).password = "123"
-    users(:one).password_confirmation = "123"
-    assert_not users(:one).valid?
-    assert_includes users(:one).errors[:password], I18n.t('activerecord.errors.models.user.attributes.password.too_short')
+    @user.password = "123"
+    @user.password_confirmation = "123"
+    assert_not @user.valid?
+    assert_includes @user.errors[:password], I18n.t('activerecord.errors.models.user.attributes.password.too_short')
   end
 
   test "is invalid when password is too long" do
-    users(:one).password = "123dfsfsoifjsopfjsifjspoifjspofijspfjspfjsdfpsjfspfjsdpfsdojfspfjspofsjfdsfsfsfsffsdsfsfsfsfs123dfsfsoifjsopfjsifjspoifjspofijspfjspfjsdfpsjfspfjsdpfsdojfspfjspofsjfdsfsfsfsffsdsfsfsfsfs"
-    users(:one).password_confirmation = "123dfsfsoifjsopfjsifjspoifjspofijspfjspfjsdfpsjfspfjsdpfsdojfspfjspofsjfdsfsfsfsffsdsfsfsfsfs123dfsfsoifjsopfjsifjspoifjspofijspfjspfjsdfpsjfspfjsdpfsdojfspfjspofsjfdsfsfsfsffsdsfsfsfsfs"
-    assert_not users(:one).valid?
-    assert_includes users(:one).errors[:password], I18n.t('activerecord.errors.models.user.attributes.password.too_long')
+    @user.password = "123dfsfsoifjsopfjsifjspoifjspofijspfjspfjsdfpsjfspfjsdpfsdojfspfjspofsjfdsfsfsfsffsdsfsfsfsfs123dfsfsoifjsopfjsifjspoifjspofijspfjspfjsdfpsjfspfjsdpfsdojfspfjspofsjfdsfsfsfsffsdsfsfsfsfs"
+    @user.password_confirmation = "123dfsfsoifjsopfjsifjspoifjspofijspfjspfjsdfpsjfspfjsdpfsdojfspfjspofsjfdsfsfsfsffsdsfsfsfsfs123dfsfsoifjsopfjsifjspoifjspofijspfjspfjsdfpsjfspfjsdpfsdojfspfjspofsjfdsfsfsfsffsdsfsfsfsfs"
+    assert_not @user.valid?
+    assert_includes @user.errors[:password], I18n.t('activerecord.errors.models.user.attributes.password.too_long')
   end
 
   test "email must be unique" do
-    users(:two).email = users(:one).email
-    assert_not users(:two).valid?
-    assert_includes users(:two).errors[:email], I18n.t('activerecord.errors.models.user.attributes.email.taken')
+    @user.save!
+    @user_2 = User.new(email: @user.email, password: "password123")
+    assert_not @user_2.valid?
+    assert_includes @user_2.errors[:email], I18n.t('activerecord.errors.models.user.attributes.email.taken')
   end
 
   test "display_name returns first part of email" do
-    assert_equal "One", users(:one).display_name
+    assert_equal "Userone", @user.display_name
   end
 end

@@ -20,7 +20,6 @@ gem "jbuilder"
 gem "tzinfo-data", platforms: %i[ windows jruby ]
 # Reduces boot times through caching; required in config/boot.rb
 gem "bootsnap", require: false
-gem "sassc-rails"
 gem "font-awesome-sass"
 # Use Redis adapter to run Action Cable in production
 gem "redis", ">= 4.0.1"

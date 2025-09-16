@@ -1,5 +1,3 @@
-ENV["RAILS_ENV"] ||= "test"
-
 require "simplecov"
 require "simplecov_small_badge"
 
@@ -9,36 +7,37 @@ SimpleCov.start "rails" do
     SimpleCovSmallBadge::Formatter
   ])
 
-  add_filter %w(
+  add_filter %w[
     app/helpers/application_helper.rb
     app/channels/application_cable/channel.rb
     app/jobs/application_job.rb
     app/mailers/application_mailer.rb
-  )
+    app/models/application_record.rb
+    app/controllers/application_controller.rb
+  ]
+
+  load Rails.root.join("app/models/user.rb")
 end
 
 SimpleCovSmallBadge.configure do |config|
-  # does not created rounded borders
   config.rounded_border = true
-  # set the background for the title to darkgrey
   config.background = "#ffffcc"
 end
 
 SimpleCov.minimum_coverage 90
 SimpleCov.refuse_coverage_drop
 
+ENV["RAILS_ENV"] ||= "test"
 require_relative "../config/environment"
 require "rails/test_help"
 
+# Erreur de loading trop rapide rails, empeche la couverture du code
+# On load les fichiers après ducoup, à creuser c'est bizarre.
+load Rails.root.join("app/models/user.rb")
 
 module ActiveSupport
   class TestCase
-    # Run tests in parallel with specified workers
+    self.use_transactional_tests = true
     parallelize(workers: :number_of_processors)
-
-    # Setup all fixtures in test/fixtures/*.yml for all tests in alphabetical order.
-    fixtures :all
-
-    # Add more helper methods to be used by all tests here...
   end
 end

@@ -1,6 +1,28 @@
 {
   "Minitest": {
     "coverage": {
+      "/home/tentayr/crypto_dashboard/app/models/user.rb": {
+        "lines": [
+          1,
+          null,
+          null,
+          1,
+          null,
+          null,
+          1,
+          1,
+          null,
+          null
+        ]
+      },
+      "/home/tentayr/crypto_dashboard/app/controllers/home_controller.rb": {
+        "lines": [
+          1,
+          1,
+          null,
+          null
+        ]
+      },
       "/home/tentayr/crypto_dashboard/app/channels/application_cable/connection.rb": {
         "lines": [
           1,
@@ -23,24 +45,6 @@
           null,
           null
         ]
-      },
-      "/home/tentayr/crypto_dashboard/app/controllers/application_controller.rb": {
-        "lines": [
-          0,
-          null,
-          null,
-          0
-        ],
-        "branches": {}
-      },
-      "/home/tentayr/crypto_dashboard/app/controllers/home_controller.rb": {
-        "lines": [
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {}
       },
       "/home/tentayr/crypto_dashboard/app/controllers/users/passwords_controller.rb": {
         "lines": [
@@ -179,31 +183,8 @@
           0
         ],
         "branches": {}
-      },
-      "/home/tentayr/crypto_dashboard/app/models/application_record.rb": {
-        "lines": [
-          0,
-          0,
-          0
-        ],
-        "branches": {}
-      },
-      "/home/tentayr/crypto_dashboard/app/models/user.rb": {
-        "lines": [
-          0,
-          null,
-          null,
-          0,
-          0,
-          null,
-          0,
-          0,
-          0,
-          0
-        ],
-        "branches": {}
       }
     },
-    "timestamp": 1758016909
+    "timestamp": 1758021625
   }
 }

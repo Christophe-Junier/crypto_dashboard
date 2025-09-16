@@ -2,7 +2,7 @@ require "test_helper"
 
 class ApplicationCable::ConnectionTest < ActionCable::Connection::TestCase
   test "connects with proper cookie" do
-    @user = User.new(email: 'userone@example.com', password: "password123")
+    @user = User.new(email: "userone@example.com", password: "password123")
     @user.save!
     # Simulate the connection request with a cookie.
     cookies.encrypted[:user_id] = @user.id

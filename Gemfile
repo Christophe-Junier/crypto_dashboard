@@ -33,7 +33,7 @@ gem "rails_charts"
 gem "devise"
 # Front
 gem "tailwindcss-ruby", "~> 4.1"
-gem "tailwindcss-rails", "~> 4.3"
+gem "tailwindcss-rails", "~> 4.4"
 
 group :development, :test do
   # See https://guides.rubyonrails.org/debugging_rails_applications.html#debugging-with-the-debug-gem
